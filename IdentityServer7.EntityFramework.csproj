@@ -4,12 +4,28 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageOutputPath>$(SolutionDir)$(Configuration)</PackageOutputPath>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageOutputPath>$(OutDir)</PackageOutputPath>
+    <PackageId>Braspin.$(AssemblyName)</PackageId>
+    <Title>nuget.org</Title>
+    <Company>Braspin</Company>
+    <PackageProjectUrl>https://github.com/braspin/IdentityServer7.EntityFramework</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/braspin/IdentityServer7.EntityFramework</RepositoryUrl>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IdentityServer7.EntityFramework.Storage\IdentityServer7.EntityFramework.Storage.csproj" />
+    <None Include="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Braspin.IdentityServer7.EntityFramework.Storage" Version="0.1.0" />
   </ItemGroup>
 
 </Project>
