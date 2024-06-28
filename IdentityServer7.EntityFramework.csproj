@@ -11,7 +11,7 @@
     <Company>Braspin</Company>
     <PackageProjectUrl>https://github.com/braspin/IdentityServer7.EntityFramework</PackageProjectUrl>
     <RepositoryUrl>https://github.com/braspin/IdentityServer7.EntityFramework</RepositoryUrl>
-    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
     <AssemblyVersion>1.0.0</AssemblyVersion>
     <FileVersion>1.0.0</FileVersion>
